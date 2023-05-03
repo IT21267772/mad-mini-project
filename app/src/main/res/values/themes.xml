@@ -24,4 +24,22 @@
         <item name="cornerFamily">rounded</item>
     </style>
 
+    <style name="text_input_modifier">
+        <item name="colorControlNormal">@color/primary_color</item>
+        <item name="colorControlActivated">@color/primary_color</item>
+    </style>
+
+
+    <style name="RoundCorners" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">17dp</item>
+        <item name="color">@color/white</item>
+    </style>
+
+    <style name="RoundCornersLayout2" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">40dp</item>
+        <item name="color">@color/white</item>
+    </style>
+
 </resources>
