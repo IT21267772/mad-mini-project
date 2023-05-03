@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">VoyageLK</string>
+
+    <string name="explore_action_bar_heading">Discover</string>
+    <string name="account_action_bar_heading">Account</string>
+    <string name="my_posts_action_bar_heading">My Posts</string>
+
+    <string name="post_submit_btn">POST</string>
+    <string name="post_title_hint">Title</string>
+    <string name="post_location_hint">Location</string>
+    <string name="post_desc_hint">Write something</string>
+    <string name="post_update_btn">UPDATE</string>
+    <string name="post_edit_btn">Edit</string>
+    <string name="post_delete_btn">Delete</string>
+
+    <string name="traveler_acc_setting1">My Profile</string>
+    <string name="traveler_acc_setting2">My Posts</string>
+    <string name="traveler_acc_setting3">Feedback</string>
+    <string name="traveler_acc_setting4">Trip Expense Calculator</string>
+    <string name="traveler_acc_setting5">Logout</string>
+
+    <string name="hotel_owner_acc_setting1">My Profile</string>
+    <string name="hotel_owner_acc_setting2">My Packages</string>
+    <string name="hotel_owner_acc_setting3">Inquiries</string>
+    <string name="hotel_owner_acc_setting4">My Posts</string>
+    <string name="hotel_owner_acc_setting5">Feedback</string>
+    <string name="hotel_owner_acc_setting6">Trip Expense Calculator</string>
+    <string name="hotel_owner_acc_setting7">Logout</string>
+</resources>

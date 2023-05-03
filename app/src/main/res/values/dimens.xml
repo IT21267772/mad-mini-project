@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="spacing">3dp</dimen>
+
+    <dimen name="explore_list_item_padding">8dp</dimen>
+    <dimen name="explore_list_item_image_height">200dp</dimen>
+    <dimen name="explore_list_item_title_size">15sp</dimen>
+    <dimen name="explore_list_item_location_size">14sp</dimen>
+
+    <dimen name="explore_list_action_bar_txt_size">26sp</dimen>
+
+    <dimen name="explore_view_post_title_size">30sp</dimen>
+    <dimen name="explore_view_post_location_size">22sp</dimen>
+    <dimen name="explore_view_post_txt_size">13.5sp</dimen>
+
+    <dimen name="my_posts_list_action_bar_txt_size">26sp</dimen>
+
+    <dimen name="my_posts_list_item_padding">8dp</dimen>
+    <dimen name="my_posts_list_item_image_height">80dp</dimen>
+    <dimen name="my_posts_list_item_image_width">80dp</dimen>
+    <dimen name="my_posts_list_item_title_size">15sp</dimen>
+    <dimen name="my_posts_list_item_location_size">14sp</dimen>
+
+    <dimen name="acc_setting_label_margin_top">5dp</dimen>
+    <dimen name="acc_setting_label_margin_right">15dp</dimen>
+    <dimen name="acc_setting_label_margin_bottom">10dp</dimen>
+    <dimen name="acc_setting_label_margin_left">15dp</dimen>
+    <dimen name="acc_setting_label_padding">10dp</dimen>
+    <dimen name="acc_setting_img_height">30dp</dimen>
+    <dimen name="acc_setting_img_width">30dp</dimen>
+    <dimen name="acc_setting_img_margin_start">10dp</dimen>
+    <dimen name="acc_setting_txt_margin_start">20dp</dimen>
+    <dimen name="acc_setting_txt_size">18sp</dimen>
+
+</resources>
