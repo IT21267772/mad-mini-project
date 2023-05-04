@@ -26,4 +26,24 @@
     <string name="hotel_owner_acc_setting5">Feedback</string>
     <string name="hotel_owner_acc_setting6">Trip Expense Calculator</string>
     <string name="hotel_owner_acc_setting7">Logout</string>
+
+
+    <!-- Strings Related to Feedback Functionality -->
+    <string name="FeedbackActionBar">Feedback</string>
+    <string name="Feedback_tempName">Profile Name Goes Here</string>
+    <string name="Feedback_tempEmail">Email Goes Here</string>
+    <string name="Feedback_tempRating">Rating</string>
+    <string name="Feedback_tempFeedback">Feedback</string>
+    <string name="provide_feedback">Provide Feedback</string>
+    <string name="FeedbackFormPrompt">Share Your Experience</string>
+    <string name="feedbackEmail">Enter Your Email</string>
+    <string name="feedbackRating">Rate Our Service (1–10)</string>
+    <string name="feedbackContent">Enter Your Feedback</string>
+    <string name="clearFeedbackbtn">Clear</string>
+    <string name="addFeedbackBtn">Submit</string>
+    <!--Additional Strings-->
+    <string name="add_feedback_prompt">Share Your Experience</string>
+    <string name="feedback_prompt2">Give Feedback</string>
+    <string name="dummyFeedbackBtn">Feedback</string>
+    <string name="sample_content_description">picture</string>
 </resources>

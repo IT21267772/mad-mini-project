@@ -22,7 +22,6 @@ class ExploreAdapter(private var exploreList : ArrayList<Post>, private val onIt
 
     // Bind data to the views for a particular post
     override fun onBindViewHolder(holder: ExploreViewHolder, position: Int) {
-
         val currentItem = exploreList[position]
         Picasso.get().load(currentItem.image).into(holder.imageView)
         holder.title.text = currentItem.title

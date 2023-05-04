@@ -10,10 +10,7 @@ import android.view.ViewGroup
 import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.fragment.app.Fragment
-import com.example.madminiproject.ExploreMyPostListActivity
-import com.example.madminiproject.ExploreUpdatePostActivity
-import com.example.madminiproject.R
-import com.example.madminiproject.SplashActivity
+import com.example.madminiproject.*
 import com.example.madminiproject.models.User
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.DataSnapshot
@@ -105,7 +102,8 @@ class AccountHotelOwnerFragment : Fragment() {
         val accSetting5 = view.findViewById<LinearLayout>(R.id.acc_setting_label5)
 
         accSetting5.setOnClickListener {
-
+            val intent = Intent(requireContext(), FeedbackRecyclerView::class.java)
+            startActivity(intent)
         }
 
         //Trip Expense Calculator

@@ -38,6 +38,15 @@
             android:name=".ExploreViewPostActivity"
             android:exported="false" />
         <activity
+            android:name=".feedback_card"
+            android:exported="false" />
+        <activity
+            android:name=".create_feedback_form"
+            android:exported="false" />
+        <activity
+            android:name=".FeedbackRecyclerView"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true" >
 

@@ -22,4 +22,8 @@
     <color name="explore_list_item_bg">#F5F0F0</color>
     <color name="postInput">#F6F6F6</color>
 
+<!--    Colors for Feedback component-->
+    <color name="primary_color">#192A56</color>
+    <color name="ash">#777777</color>
+
 </resources>
