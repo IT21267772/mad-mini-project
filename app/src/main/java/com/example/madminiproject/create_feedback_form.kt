@@ -1,5 +1,6 @@
 package com.example.madminiproject
 
+import android.content.Intent
 import android.graphics.Paint
 import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
@@ -57,6 +58,12 @@ class create_feedback_form : AppCompatActivity() {
         }
 
         val submitButton = findViewById<TextView>(R.id.addFeedbackBtn)
+        val topBackButton = findViewById<ImageView>(R.id.backBtn)
+
+        topBackButton.setOnClickListener{
+            val intent = Intent(this,FeedbackRecyclerView::class.java)
+            startActivity(intent)
+        }
 
         // Set a click listener for the submit button
         submitButton.setOnClickListener {
