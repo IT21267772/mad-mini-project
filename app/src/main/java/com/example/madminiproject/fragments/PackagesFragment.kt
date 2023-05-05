@@ -95,6 +95,7 @@ class PackagesFragment : Fragment() {
         intent.putExtra("author", pack.packAuthor)
         intent.putExtra("price", pack.hotelPrice)
         intent.putExtra("packDescription", pack.packDesc)
+        intent.putExtra("hotelContact", pack.contactNo)
         startActivity(intent)
     }
 }

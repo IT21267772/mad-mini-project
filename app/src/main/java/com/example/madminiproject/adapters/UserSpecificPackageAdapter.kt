@@ -69,6 +69,7 @@ class UserSpecificPackageAdapter(private val userPackages : ArrayList<PackageMod
             intent.putExtra("hotelPrice", currentItem.hotelPrice).toString()
             intent.putExtra("packDescription", currentItem.packDesc)
             intent.putExtra("image", currentItem.packImage)
+            intent.putExtra("contactNumber", currentItem.contactNo)
             holder.itemView.context.startActivity(intent)
         }
 

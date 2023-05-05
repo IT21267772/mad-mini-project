@@ -61,27 +61,41 @@
         android:background="@drawable/text_input_back"
         android:paddingStart="20dp"/>
 
+
+    <EditText
+        android:id="@+id/add_package_form_contact_number"
+        android:layout_width="@dimen/package_form_textBox_width"
+        android:layout_height="@dimen/package_form_textBox_height"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/text_input_back"
+        android:ems="10"
+        android:hint="@string/package_contact_no"
+        android:inputType="textPersonName"
+        android:paddingStart="20dp"
+        android:textSize="23sp"
+        android:theme="@style/text_input_modifier"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/add_package_form_lodgePrice" />
+
     <MultiAutoCompleteTextView
 
         android:id="@+id/add_package_form_description"
         android:layout_width="@dimen/package_form_textBox_width"
-        android:layout_height="180dp"
-        android:ems="10"
-        android:inputType="text|textMultiLine"
-        android:hint="@string/package_description_placeholder"
-        android:gravity="clip_horizontal"
-        android:textSize="23sp"
-        app:layout_constraintTop_toBottomOf="@+id/add_package_form_lodgePrice"
-        app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginStart="30dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="28dp"
         android:layout_marginTop="10dp"
-        tools:layout_editor_absoluteX="64dp"
-        android:paddingTop="10dp"
-        tools:layout_editor_absoluteY="106dp"
-        android:theme="@style/text_input_modifier"
+        android:background="@drawable/text_input_back"
+        android:ems="10"
+        android:gravity="clip_horizontal"
+        android:hint="@string/package_description_placeholder"
+        android:inputType="text|textMultiLine"
         android:paddingStart="20dp"
-        android:background="@drawable/text_input_back"/>
-
+        android:paddingTop="10dp"
+        android:textSize="23sp"
+        android:theme="@style/text_input_modifier"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/add_package_form_contact_number" />
 
     <TextView
         android:id="@+id/package_details"
@@ -125,7 +139,6 @@
         android:id="@+id/addPackageBtn"
         android:layout_width="@dimen/package_form_btn_width"
         android:layout_height="@dimen/package_form_btn_height"
-        android:layout_marginTop="4dp"
         android:backgroundTint="@color/secondary"
         android:text="@string/btn_package_add"
         android:textColor="@color/primary_color"
@@ -133,7 +146,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/uploadPicBtn" />
+        app:layout_constraintTop_toBottomOf="@+id/package_pic_upload" />
 
     <ImageView
         android:id="@+id/package_pic_upload"
@@ -147,19 +160,5 @@
         app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="441dp" />
-
-    <Button
-        android:id="@+id/uploadPicBtn"
-        android:layout_width="@dimen/package_form_btn_width"
-        android:layout_height="@dimen/package_form_btn_height"
-        android:layout_marginTop="4dp"
-        android:backgroundTint="@color/primary_color"
-        android:text="@string/btn_package_browse_image"
-        android:textColor="@color/secondary"
-        android:textSize="15sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/package_pic_upload" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -138,13 +138,40 @@
         <ImageView
             android:layout_width="23dp"
             android:layout_height="23dp"
-            android:src="@drawable/writtenby"
+            android:src="@drawable/drawablecall"
             android:layout_marginStart="20dp"
             app:tint="@color/ash"
             />
 
         <TextView
             android:id="@+id/pack_lodge_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:text="lodge_phone"
+            android:textSize="18sp"
+            android:layout_marginStart="10dp"
+            android:gravity="center" />
+    </LinearLayout>
+
+    <!--    set four-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:src="@drawable/writtenby"
+            android:layout_marginStart="20dp"
+            app:tint="@color/ash"
+            />
+
+        <TextView
+            android:id="@+id/pack_lodge_author"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/poppins_medium"

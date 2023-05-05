@@ -18,7 +18,8 @@ class PackageDescription : AppCompatActivity() {
         val lodgeLocation = findViewById<TextView>(R.id.pack_desc_location)
         val lodgePrice = findViewById<TextView>(R.id.pack_desc_price)
         val description = findViewById<TextView>(R.id.pack_desc_description)
-        val author = findViewById<TextView>(R.id.pack_lodge_phone)
+        val author = findViewById<TextView>(R.id.pack_lodge_author)
+        val phoneNumber = findViewById<TextView>(R.id.pack_lodge_phone)
 
         val bundle : Bundle?=intent.extras
 
@@ -28,6 +29,7 @@ class PackageDescription : AppCompatActivity() {
         val price = intent.getDoubleExtra("price", 0.0)
         val ldescription = intent.getStringExtra("packDescription")
         val writer = intent.getStringExtra("author")
+        val contact = intent.getStringExtra("hotelContact")
 
         // Use the Picasso library to load the image from the URL into the ImageView
         Picasso.get()
@@ -39,5 +41,6 @@ class PackageDescription : AppCompatActivity() {
         lodgePrice.text = "LKR $price per night"
         description.text = ldescription
         author.text = "Published by $writer"
+        phoneNumber.text = contact
     }
 }

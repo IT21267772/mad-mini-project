@@ -56,11 +56,27 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/update_lodge_location" />
 
+    <EditText
+        android:id="@+id/update_package_contact_number"
+        android:layout_width="@dimen/package_form_textBox_width"
+        android:layout_height="@dimen/package_form_textBox_height"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/text_input_back"
+        android:ems="10"
+        android:hint="@string/package_contact_no"
+        android:inputType="textPersonName"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:textSize="23sp"
+        android:theme="@style/text_input_modifier"
+        app:layout_constraintStart_toStartOf="@+id/update_package_price"
+        app:layout_constraintTop_toBottomOf="@id/update_package_price" />
+
     <MultiAutoCompleteTextView
 
         android:id="@+id/update_package_description"
         android:layout_width="@dimen/package_form_textBox_width"
-        android:layout_height="180dp"
+        android:layout_height="150dp"
         android:layout_marginStart="30dp"
         android:layout_marginTop="10dp"
         android:background="@drawable/text_input_back"
@@ -74,7 +90,7 @@
         android:textSize="23sp"
         android:theme="@style/text_input_modifier"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/update_package_price" />
+        app:layout_constraintTop_toBottomOf="@+id/update_package_contact_number" />
 
     <TextView
         android:id="@+id/update_package_details"
@@ -121,11 +137,11 @@
         android:id="@+id/update_package_btn"
         android:layout_width="@dimen/package_form_btn_width"
         android:layout_height="@dimen/package_form_btn_height"
+        android:layout_marginTop="28dp"
         android:backgroundTint="@color/secondary"
         android:text="@string/btn_package_update"
         android:textColor="@color/primary_color"
         android:textSize="15sp"
-        android:layout_marginTop="30dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
@@ -135,10 +151,11 @@
         android:id="@+id/package_pic_upload"
         android:layout_width="120dp"
         android:layout_height="120dp"
+        android:layout_marginTop="28dp"
         android:contentDescription="@string/sample_content_description"
         android:src="@drawable/baseline_image_24"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/update_package_description" />
 

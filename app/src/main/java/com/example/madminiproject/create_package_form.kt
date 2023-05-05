@@ -59,9 +59,10 @@ class create_package_form : AppCompatActivity() {
             val hotelName = findViewById<EditText>(R.id.add_package_form_lodgeName).text.toString()
             val hotelLocation = findViewById<EditText>(R.id.add_package_form_lodgeLocation).text.toString()
             val hotelPrice = findViewById<EditText>(R.id.add_package_form_lodgePrice).text.toString()
+            val hotelContact = findViewById<EditText>(R.id.add_package_form_contact_number).text.toString()
             val packDescription = findViewById<MultiAutoCompleteTextView>(R.id.add_package_form_description).text.toString()
 
-            if(hotelName.isNotEmpty() && hotelLocation.isNotEmpty() && hotelPrice.isNotEmpty() && packDescription.isNotEmpty() && uri != null ){
+            if(hotelName.isNotEmpty() && hotelLocation.isNotEmpty() && hotelPrice.isNotEmpty() && packDescription.isNotEmpty() && hotelContact.isNotEmpty() && uri != null ){
 
                 //assigning the current user using firebase auth
                 val currentUser = firebaseAuth.currentUser
@@ -111,7 +112,8 @@ class create_package_form : AppCompatActivity() {
                                             name ?: "",
                                             hotelPrice.toDouble(),
                                             packDescription,
-                                            currentUser.uid
+                                            currentUser.uid,
+                                            hotelContact
                                         )
                                         packageRef.setValue(pack)
                                         Toast.makeText(applicationContext, "Post added", Toast.LENGTH_SHORT).show()
@@ -130,7 +132,7 @@ class create_package_form : AppCompatActivity() {
                                 }
                         } else {
                             // No image selected, save the Post object to the database without an image URL
-                            val pack = PackageModel(packageRef.key ?: "", "", hotelName, hotelLocation, name ?: "", 0.0, packDescription, currentUser.uid)
+                            val pack = PackageModel(packageRef.key ?: "", "", hotelName, hotelLocation, name ?: "", 0.0, packDescription, currentUser.uid, hotelContact)
                             packageRef.setValue(pack)
                             Toast.makeText(applicationContext, "Post added", Toast.LENGTH_SHORT).show()
                             finish()

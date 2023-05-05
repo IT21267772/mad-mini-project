@@ -51,11 +51,13 @@ class UpdatePackageDetails : AppCompatActivity() {
         val hotelLocation = intent.getStringExtra("hotelLocation")
         val hotelPrice = intent.getDoubleExtra("hotelPrice",0.0)
         val packDescription = intent.getStringExtra("packDescription")
+        val packPhoneNo = intent.getStringExtra("contactNumber")
 
         val edtHotelName = findViewById<EditText>(R.id.update_lodge_name)
         val edtHotelLocation = findViewById<EditText>(R.id.update_lodge_location)
         val edtHotelDescription = findViewById<MultiAutoCompleteTextView>(R.id.update_package_description)
         val edtPackPrice = findViewById<EditText>(R.id.update_package_price)
+        val edtHotelContact = findViewById<EditText>(R.id.update_package_contact_number)
 
         // assign relevant values to the edit text views
         Picasso.get()
@@ -65,6 +67,7 @@ class UpdatePackageDetails : AppCompatActivity() {
         edtHotelLocation.setText(hotelLocation)
         edtPackPrice.setText(hotelPrice.toString())
         edtHotelDescription.setText(packDescription)
+        edtHotelContact.setText(packPhoneNo)
 
         // Initialize Firebase authentication
         firebaseAuth = FirebaseAuth.getInstance()
@@ -74,7 +77,7 @@ class UpdatePackageDetails : AppCompatActivity() {
         updatePackageButton.setOnClickListener{
 
 
-            if (edtHotelName.text.toString().isNotEmpty() && edtHotelLocation.text.toString().isNotEmpty() && edtPackPrice.text.toString().isNotEmpty() && edtHotelDescription.text.toString().isNotEmpty()){
+            if (edtHotelName.text.toString().isNotEmpty() && edtHotelLocation.text.toString().isNotEmpty() && edtPackPrice.text.toString().isNotEmpty() && edtHotelDescription.text.toString().isNotEmpty() && edtHotelContact.text.isNotEmpty()){
 
                 // Get the current user from Firebase authentication
                 val currentUser = firebaseAuth.currentUser
@@ -123,6 +126,7 @@ class UpdatePackageDetails : AppCompatActivity() {
                                         packageRef.child("hotelPrice").setValue(edtPackPrice.text.toString())
                                         packageRef.child("packAuthor").setValue(name)
                                         packageRef.child("packDesc").setValue(edtHotelDescription.text.toString())
+                                        packageRef.child("contactNo").setValue(edtHotelContact.text.toString())
                                         Toast.makeText(applicationContext, "Post updated", Toast.LENGTH_SHORT).show()
                                         finish()
                                     }
@@ -144,6 +148,7 @@ class UpdatePackageDetails : AppCompatActivity() {
                             packageRef.child("author").setValue(name)
                             packageRef.child("hotelPrice").setValue(edtPackPrice.text.toString().toDouble())
                             packageRef.child("packDesc").setValue(edtHotelDescription.text.toString())
+                            packageRef.child("contactNo").setValue(edtHotelContact.text.toString())
                             Toast.makeText(applicationContext, "Package Updated", Toast.LENGTH_SHORT).show()
                             finish()
                         }

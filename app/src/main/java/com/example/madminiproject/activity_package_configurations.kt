@@ -82,13 +82,14 @@ class activity_package_configurations : AppCompatActivity() {
 
     // Define a function to handle click events on a Post object and start the ExploreViewPostActivity with relevant data
     private fun onItemClick(pack: PackageModel) {
-        val intent = Intent(this, activity_package_configurations::class.java)
+        val intent = Intent(this, PackageDescription::class.java)
         intent.putExtra("packID", pack.packID)
         intent.putExtra("hotelName", pack.hotelName)
         intent.putExtra("hotelLocation", pack.hotelLocation)
         intent.putExtra("packAuthor", pack.packAuthor)
         intent.putExtra("hotelPrice", pack.hotelPrice)
         intent.putExtra("packDescription", pack.packDesc)
+        intent.putExtra("hotelContact", pack.contactNo)
         intent.putExtra("image", pack.packImage)
         startActivity(intent)
     }

@@ -8,5 +8,6 @@ data class PackageModel(
     val packAuthor: String = "",
     var hotelPrice: Double = 0.0,
     var packDesc:String = "",
-    val userId: String = ""
+    val userId: String = "",
+    val contactNo: String = ""
 )
