@@ -121,15 +121,15 @@
         android:id="@+id/update_package_btn"
         android:layout_width="@dimen/package_form_btn_width"
         android:layout_height="@dimen/package_form_btn_height"
-        android:layout_marginTop="4dp"
         android:backgroundTint="@color/secondary"
         android:text="@string/btn_package_update"
         android:textColor="@color/primary_color"
         android:textSize="15sp"
+        android:layout_marginTop="30dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/uploadPicBtn" />
+        app:layout_constraintTop_toBottomOf="@+id/package_pic_upload" />
 
     <ImageView
         android:id="@+id/package_pic_upload"
@@ -142,17 +142,4 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/update_package_description" />
 
-    <Button
-        android:id="@+id/uploadPicBtn"
-        android:layout_width="@dimen/package_form_btn_width"
-        android:layout_height="@dimen/package_form_btn_height"
-        android:layout_marginTop="4dp"
-        android:backgroundTint="@color/primary_color"
-        android:text="@string/btn_package_browse_image"
-        android:textColor="@color/secondary"
-        android:textSize="15sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/package_pic_upload" />
 </androidx.constraintlayout.widget.ConstraintLayout>
