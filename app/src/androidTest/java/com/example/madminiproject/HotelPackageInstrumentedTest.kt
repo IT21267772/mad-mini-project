@@ -3,7 +3,6 @@ package com.example.madminiproject
 import android.util.Log
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import com.example.madminiproject.models.PackageModel
-import com.example.madminiproject.models.Post
 import com.google.firebase.database.FirebaseDatabase
 import org.junit.Assert.*
 import org.junit.After
@@ -18,7 +17,7 @@ import java.util.concurrent.TimeUnit
 class HotelPackageInstrumentedTest {
     private val userId = "TestUser"
     private val database = FirebaseDatabase.getInstance().reference.child("packages").child(userId)
-    private val Tag = "TravelPostInstrumentedTest"
+    private val Tag = "HotelPackageInstrumentedTest"
 
     @Before
     fun setUp() {

@@ -1,7 +1,6 @@
 package com.example.madminiproject
 
 import com.example.madminiproject.models.PackageModel
-import com.example.madminiproject.models.Post
 import org.junit.Assert.assertEquals
 import org.junit.Test
 
