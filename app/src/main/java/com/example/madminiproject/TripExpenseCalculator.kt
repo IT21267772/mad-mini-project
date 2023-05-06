@@ -65,9 +65,9 @@ class TripExpenseCalculator : AppCompatActivity() {
             }
 
             when(hotelType){
-                "3 Star" -> finalTotal += 40000
-                "4 Star" -> finalTotal += 100000
-                "5 Star" -> finalTotal += 225000
+                "3 Star" -> finalTotal += 25000
+                "4 Star" -> finalTotal += 50000
+                "5 Star" -> finalTotal += 75000
             }
 
             when(travelerCount){
@@ -81,9 +81,9 @@ class TripExpenseCalculator : AppCompatActivity() {
             when(transportMedium){
                 "Rental Car/Cab" -> finalTotal += 100000
                 "Rental Motorcycle" -> finalTotal += 30000
-                "Uber" -> finalTotal += 75000
+                "Uber" -> finalTotal += 20000
                 "Bus" -> finalTotal += 9000
-                "Train" -> finalTotal += 20000
+                "Train" -> finalTotal += 10000
             }
 
             expenseDisplay.setText("LKR ${finalTotal}0")

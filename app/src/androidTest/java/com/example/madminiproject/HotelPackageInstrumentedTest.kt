@@ -52,7 +52,7 @@ class HotelPackageInstrumentedTest {
         database.child(packID).get().addOnCompleteListener { task ->
             if (task.isSuccessful) {
                 retrievedPackage = task.result.getValue(PackageModel::class.java)
-                Log.d(Tag, "Retrieved post: $retrievedPackage")
+                Log.d(Tag, "Retrieved Hotel Package: $retrievedPackage")
             }
             latch.countDown()
         }
@@ -93,7 +93,7 @@ class HotelPackageInstrumentedTest {
         database.child(packID).get().addOnCompleteListener { task ->
             if (task.isSuccessful) {
                 retrievedPackage = task.result.getValue(PackageModel::class.java)
-                Log.d(Tag, "Retrieved post: $retrievedPackage")
+                Log.d(Tag, "Retrieved Hotel Package: $retrievedPackage")
             }
             latch.countDown()
         }
@@ -133,7 +133,7 @@ class HotelPackageInstrumentedTest {
         database.child(packID).get().addOnCompleteListener { task ->
             if (task.isSuccessful) {
                 retrievedPackage = task.result.getValue(PackageModel::class.java)
-                Log.d(Tag, "Retrieved post: $retrievedPackage")
+                Log.d(Tag, "Retrieved Hotel Package: $retrievedPackage")
             }
             latch.countDown()
         }
@@ -166,7 +166,7 @@ class HotelPackageInstrumentedTest {
         database.child(packID).get().addOnCompleteListener { task ->
             if (task.isSuccessful) {
                 updatedPackage = task.result.getValue(PackageModel::class.java)
-                Log.d(Tag, "Updated post: $updatedPackage")
+                Log.d(Tag, "Updated Hotel Package: $updatedPackage")
             }
             latch2.countDown()
         }
@@ -208,7 +208,7 @@ class HotelPackageInstrumentedTest {
         database.child(packID).get().addOnCompleteListener { task ->
             if (task.isSuccessful) {
                 retrievedPackage = task.result.getValue(PackageModel::class.java)
-                Log.d(Tag, "Retrieved post: $retrievedPackage")
+                Log.d(Tag, "Retrieved Hotel Package: $retrievedPackage")
             }
             latch.countDown()
         }
@@ -236,7 +236,7 @@ class HotelPackageInstrumentedTest {
         database.child(packID).get().addOnCompleteListener { task ->
             if (task.isSuccessful) {
                 deletedPackage = task.result.getValue(PackageModel::class.java)
-                Log.d(Tag, "Deleted post: $deletedPackage")
+                Log.d(Tag, "Deleted Hotel Package: $deletedPackage")
             }
             latch2.countDown()
         }
