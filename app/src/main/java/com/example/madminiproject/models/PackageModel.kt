@@ -5,9 +5,9 @@ data class PackageModel(
     var packImage:String = "",
     var hotelName:String = "",
     var hotelLocation:String = "",
-    val packAuthor: String = "",
+    var packAuthor: String = "",
     var hotelPrice: Double = 0.0,
     var packDesc:String = "",
-    val userId: String = "",
-    val contactNo: String = ""
+    var userId: String = "",
+    var contactNo: String = ""
 )
