@@ -6,57 +6,88 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="10dp"
+    android:background="@drawable/background"
     tools:context=".SignUpActivity">
+
+    <TextView
+        android:id="@+id/appName"
+        android:layout_width="216dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="170dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="1dp"
+        android:fontFamily="@font/poppin"
+        android:text="@string/app_name"
+        android:textColor="#000000"
+        android:textSize="38sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextSizeCheck" />
+
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:fontFamily="@font/nunitosansblack"
         android:gravity="center"
-        android:text="Login"
-        android:layout_marginTop="50dp"
-        android:textSize="34sp" />
+        android:text="@string/loginName"
+        android:textColor="#000000"
+        android:textSize="38sp" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="140dp">
+        android:layout_marginTop="90dp">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/edtEmail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_background"
+            android:hint="@string/loginEmail"
             android:inputType="textEmailAddress"
-            android:hint="Email" />
+            android:textColorHint="#616161"
+            tools:ignore="VisualLintTextFieldSize" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="50dp"
         app:passwordToggleEnabled="true">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/edtPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_background"
+            android:hint="@string/loginPass"
             android:inputType="textPassword"
-            android:hint="Password" />
+            tools:ignore="VisualLintTextFieldSize" />
     </com.google.android.material.textfield.TextInputLayout>
 
 
     <Button
         android:id="@+id/btnLogin"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
+        android:layout_width="146dp"
+        android:layout_height="59dp"
         android:layout_gravity="center"
-        android:text="Login" />
+        android:layout_marginTop="40dp"
+        android:background="@drawable/splash_btn"
+        android:text="@string/login_btn"
+        android:textSize="25dp" />
 
     <TextView
         android:id="@+id/btnRegister"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="20sp"
         android:layout_gravity="center"
-        android:text="Signup" />
+        android:layout_marginTop="10dp"
+        android:text="@string/havenoAccSignup"
+        android:textColor="#051EA6"
+        android:textSize="20sp" />
 </LinearLayout>

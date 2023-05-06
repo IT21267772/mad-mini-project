@@ -13,6 +13,7 @@
     <string name="post_edit_btn">Edit</string>
     <string name="post_delete_btn">Delete</string>
 
+    <string name="travelerName">Traveler</string>
     <string name="traveler_acc_setting1">My Profile</string>
     <string name="traveler_acc_setting2">My Posts</string>
     <string name="traveler_acc_setting3">Feedback</string>
@@ -46,4 +47,40 @@
     <string name="feedback_prompt2">Give Feedback</string>
     <string name="dummyFeedbackBtn">Feedback</string>
     <string name="sample_content_description">picture</string>
+    <string name="login_btn">LogIn</string>
+    <string name="havenoAccSignup">SignUp</string>
+    <string name="loginPass">Password</string>
+    <string name="loginEmail">Email</string>
+    <string name="loginName">Login</string>
+
+    <string name="explorehome">Sri Lanka, a journey that will leave you mesmerized and wanting more.</string>
+    <string name="splsh_name">splshname</string>
+    <string name="explore">Explore</string>
+
+    <string name="RegTitle">Register</string>
+    <string name="RegName">Name</string>
+    <string name="RegEmail">Email</string>
+    <string name="RegPass">Password</string>
+    <string name="RegConfPass">Confirm Password</string>
+    <string name="Regbtn">Sign Up</string>
+    <string name="haveAccount">Already have an Account? Sign in</string>
+
+    <string name="LoginTitle">Login</string>
+    <string name="LoginBtn">Login</string>
+    <string name="NoAccount">No Account ? Create an Account</string>
+
+    <string name="type_your_password">Type Your Password</string>
+    <string name="re_enter_your_password">Re-enter Your Password</string>
+    <string name="name">Name</string>
+    <string name="traveler">Traveler</string>
+    <string name="hotel_owner">Hotel Owner</string>
+    <string name="enter_your_password">Type Your Password</string>
+
+    <string-array name="userType">
+        <item>Select Register Type</item>
+        <item>Traveler</item>
+        <item>Accommodation Provider</item>
+    </string-array>
+
+
 </resources>

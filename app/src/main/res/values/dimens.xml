@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <dimen name="spacing">3dp</dimen>
+    <dimen name="spacing">10dp</dimen>
 
     <dimen name="explore_list_item_padding">8dp</dimen>
     <dimen name="explore_list_item_image_height">200dp</dimen>
@@ -45,5 +45,7 @@
     <!--    feedback card icons -->
     <dimen name="feedback_user_icon_height">92dp</dimen>
     <dimen name="feedback_user_icon_width">92dp</dimen>
+
+
 
 </resources>

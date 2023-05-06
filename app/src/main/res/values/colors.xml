@@ -26,4 +26,8 @@
     <color name="primary_color">#192A56</color>
     <color name="ash">#777777</color>
 
+    <color name="SecondryColor">#FFBE76</color>
+    <color name="DeleteColor">#ff1a1a</color>
+    <color name="UpdateColor">#00b33c</color>
+
 </resources>
