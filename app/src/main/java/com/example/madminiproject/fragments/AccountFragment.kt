@@ -90,7 +90,8 @@ class AccountFragment : Fragment() {
         val accSetting3 = view.findViewById<LinearLayout>(R.id.acc_setting_label3)
 
         accSetting3.setOnClickListener {
-
+            val intent = Intent(requireContext(), FeedbackRecyclerView::class.java)
+            startActivity(intent)
         }
 
         //Trip Expense Calculator

@@ -12,7 +12,6 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContracts
 import com.example.madminiproject.models.Feedback
-import com.example.madminiproject.models.Post
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
@@ -60,9 +59,9 @@ class create_feedback_form : AppCompatActivity() {
         val submitButton = findViewById<TextView>(R.id.addFeedbackBtn)
         val topBackButton = findViewById<ImageView>(R.id.backBtn)
 
+        //back navigation button function
         topBackButton.setOnClickListener{
-            val intent = Intent(this,FeedbackRecyclerView::class.java)
-            startActivity(intent)
+            finish()
         }
 
         // Set a click listener for the submit button
@@ -156,11 +155,10 @@ class create_feedback_form : AppCompatActivity() {
                 })
             } else {
                 // If any of the required fields are empty, show a toast message to the user
-                Toast.makeText(this, "Empty fields are not allowed !!", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "Empty fields are not allowed !", Toast.LENGTH_SHORT).show()
             }
 
         }
-
 
     }
 }

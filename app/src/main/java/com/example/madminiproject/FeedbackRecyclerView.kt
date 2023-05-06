@@ -8,7 +8,6 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.madminiproject.adapters.FeedbackAdapter
 import com.example.madminiproject.models.Feedback
-import com.example.madminiproject.models.Post
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.google.firebase.database.*
 
@@ -49,27 +48,6 @@ class FeedbackRecyclerView : AppCompatActivity() {
         database = FirebaseDatabase.getInstance().reference.child("feedbacks")
     }
 
-    // Function to fetch data from Firebase
-//    private fun getTaskFromFirebase() {
-//        database.addValueEventListener(object : ValueEventListener {
-//            override fun onDataChange(snapshot: DataSnapshot) {
-//                val feedbackList = ArrayList<Feedback>()
-//                for (userSnapshot in snapshot.children) {
-//                    for (feedbackSnapshot in userSnapshot.children) {
-//                        val feedback = feedbackSnapshot.getValue(Feedback::class.java)
-//                        feedback?.let { feedbackList.add(it) }
-//                    }
-//                }
-//
-////                // Update ExploreAdapter with fetched data
-////                feedbackAdapter.updateData(feedbackList)
-//            }
-//
-//            override fun onCancelled(error: DatabaseError) {
-//                Log.e(TAG, "onCancelled", error.toException())
-//            }
-//        })
-//    }
     private fun getTaskFromFirebase() {
         database.addValueEventListener(object : ValueEventListener {
             override fun onDataChange(snapshot: DataSnapshot) {
