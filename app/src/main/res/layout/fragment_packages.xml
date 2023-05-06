@@ -7,13 +7,26 @@
     tools:context=".fragments.PackagesFragment">
 
     <!-- TODO: Update blank fragment layout -->
+
+
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:textSize="50dp"
-        android:textAlignment="center"
-        android:textColor="@color/primary"
-        android:text="Packages Fragment" />
+        android:id="@+id/up_ribbon_packages"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/primary_color"
+        android:paddingTop="17dp"
+        android:paddingStart="25dp"
+        android:paddingEnd="25dp"
+        android:textSize="24sp"
+        android:text="@string/packages"
+        android:fontFamily="@font/poppins_medium"
+        android:textColor="@color/background"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/package_cards_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="660dp"
+        android:layout_marginTop="70dp" />
+
 
 </FrameLayout>

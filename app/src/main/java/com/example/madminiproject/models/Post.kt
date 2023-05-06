@@ -5,8 +5,8 @@ data class Post(
     var image: String = "",
     var title: String = "",
     var location: String = "",
-    val author: String = "",
-    val views: Int = 0 ,
-    val content: String = "",
+    var author: String = "",
+    var views: Int = 0 ,
+    var content: String = "",
     val userId: String = ""
 )

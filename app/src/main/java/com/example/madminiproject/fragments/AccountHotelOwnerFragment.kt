@@ -80,7 +80,8 @@ class AccountHotelOwnerFragment : Fragment() {
         val accSetting2 = view.findViewById<LinearLayout>(R.id.acc_setting_label2)
 
         accSetting2.setOnClickListener {
-
+            val intent = Intent(requireContext(), activity_package_configurations::class.java)
+            startActivity(intent)
         }
 
         //Inquiries
@@ -110,7 +111,8 @@ class AccountHotelOwnerFragment : Fragment() {
         val accSetting6 = view.findViewById<LinearLayout>(R.id.acc_setting_label6)
 
         accSetting6.setOnClickListener {
-
+            val intent = Intent(requireContext(), TripExpenseCalculator::class.java)
+            startActivity(intent)
         }
 
         //Logout
