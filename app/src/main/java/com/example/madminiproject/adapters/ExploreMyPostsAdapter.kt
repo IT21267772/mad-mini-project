@@ -94,7 +94,6 @@ class ExploreMyPostsAdapter(private val myPostsList : ArrayList<Post>, private v
 
     // Return the size of myPostsList ArrayList
     override fun getItemCount(): Int {
-
         return myPostsList.size
     }
 

@@ -97,7 +97,8 @@ class AccountFragment : Fragment() {
         val accSetting4 = view.findViewById<LinearLayout>(R.id.acc_setting_label4)
 
         accSetting4.setOnClickListener {
-
+            val intent = Intent(requireContext(),TripExpenseCalculator::class.java)
+            startActivity(intent)
         }
 
         //Logout
