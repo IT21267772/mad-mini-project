@@ -9,6 +9,7 @@ import com.example.madminiproject.fragments.*
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
+import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.database.ValueEventListener
 
@@ -19,6 +20,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
     private lateinit var firebaseAuth: FirebaseAuth
     private val TAG = "MainActivity"
+    private lateinit var databaseReference: DatabaseReference
 
     // Define a variable to store the currently displayed fragment
     private var currentFragment: Fragment? = null

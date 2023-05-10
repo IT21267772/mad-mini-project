@@ -17,7 +17,7 @@ class SplashActivity : AppCompatActivity() {
         nextScreen = findViewById(R.id.button)
 
         nextScreen.setOnClickListener {
-            val intent = Intent(this, MainActivity::class.java)
+            val intent = Intent(this, SignInActivity::class.java)
             startActivity(intent)
             finish()
         }

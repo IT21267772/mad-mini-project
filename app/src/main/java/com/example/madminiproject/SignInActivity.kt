@@ -11,6 +11,7 @@ class SignInActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivitySignInBinding
     private lateinit var firebaseAuth : FirebaseAuth
+    private lateinit var sessionManager: SessionManager
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -40,6 +41,7 @@ class SignInActivity : AppCompatActivity() {
                         Toast.makeText(this, it.exception?.message.toString(), Toast.LENGTH_SHORT).show()
                     }
                 }
+                sessionManager.saveSession(email,password)
 
             } else {
                 Toast.makeText(this, "Empty fields are not allowed !!", Toast.LENGTH_SHORT).show()
