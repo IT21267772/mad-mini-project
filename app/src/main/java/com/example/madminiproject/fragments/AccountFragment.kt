@@ -28,6 +28,8 @@ class AccountFragment : Fragment() {
     private val TAG = "AccountFragment"
     private lateinit var viewProfile: TextView
 
+    private lateinit var acc_setting_label1 : TextView
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -47,6 +49,11 @@ class AccountFragment : Fragment() {
 
         // Get a reference to the current user's data in the Firebase Realtime Database
         val userRef = FirebaseDatabase.getInstance().reference.child("users").child(currentUser?.uid!!)
+
+        acc_setting_label1.setOnClickListener {
+            val intent = Intent(this@AccountFragment, ViewUserProfile ::class.java)
+            startActivity(intent)
+        }
 
         // Add a listener to the userRef that listens for changes to the user data
         userRef.addValueEventListener(object : ValueEventListener {
