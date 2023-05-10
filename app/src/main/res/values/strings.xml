@@ -95,6 +95,7 @@
     <string name="get_DOB">Birthday</string>
 
     <string name="edituserprofile">Edit Profile</string>
+    <string name="viewProfile">View Profile</string>
 
     <string-array name="userType">
         <item>Select Register Type</item>

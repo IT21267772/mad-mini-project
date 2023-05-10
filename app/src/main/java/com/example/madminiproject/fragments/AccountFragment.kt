@@ -8,6 +8,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import android.widget.LinearLayout
 import android.widget.TextView
 import com.example.madminiproject.*
@@ -25,6 +26,7 @@ import java.util.Objects
 class AccountFragment : Fragment() {
 
     private val TAG = "AccountFragment"
+    private lateinit var viewProfile: TextView
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -68,6 +70,8 @@ class AccountFragment : Fragment() {
                 // Handle errors here if the read operation is cancelled or fails
                 Log.e(TAG, "onCancelled", databaseError.toException())
             }
+
+
         })
 
 

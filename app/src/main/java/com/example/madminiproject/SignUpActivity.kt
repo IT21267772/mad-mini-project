@@ -13,7 +13,7 @@ import com.google.firebase.database.FirebaseDatabase
 class SignUpActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivitySignUpBinding
-    private lateinit var firebaseAuth : FirebaseAuth
+    private lateinit var firebaseAuth: FirebaseAuth
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -31,32 +31,36 @@ class SignUpActivity : AppCompatActivity() {
 
             var type = ""
 
-            if(binding.radioHO.isChecked) {
+            if (binding.radioHO.isChecked) {
                 type = "Hotel Owner"
             } else if (binding.radioT.isChecked) {
                 type = "Traveler"
             }
 
-
-            if (name .isNotEmpty() && email.isNotEmpty() && password.isNotEmpty() && confirmPassword.isNotEmpty() && type.isNotEmpty()) {
+            if (name.isNotEmpty() && email.isNotEmpty() && password.isNotEmpty() && confirmPassword.isNotEmpty() && type.isNotEmpty()) {
                 if (password == confirmPassword) {
 
                     val user = User(name, email, type)
 
-                    firebaseAuth.createUserWithEmailAndPassword(email, password).addOnCompleteListener {
-                        if (it.isSuccessful) {
-                            Toast.makeText(this, "Registration successful", Toast.LENGTH_SHORT).show()
+                    firebaseAuth.createUserWithEmailAndPassword(email, password)
+                        .addOnCompleteListener {
+                            if (it.isSuccessful) {
+                                Toast.makeText(this, "Registration successful", Toast.LENGTH_SHORT)
+                                    .show()
 
-                            val currentUser = firebaseAuth.currentUser
-                            val userRef = FirebaseDatabase.getInstance().reference.child("users").child(currentUser?.uid!!)
-                            userRef.setValue(user)
+                                val currentUser = firebaseAuth.currentUser
+                                val userRef =
+                                    FirebaseDatabase.getInstance().reference.child("users")
+                                        .child(currentUser?.uid!!)
+                                userRef.setValue(user)
 
-                            val intent = Intent(this, MainActivity::class.java)
-                            startActivity(intent)
-                        } else {
-                            Toast.makeText(this, it.exception.toString(), Toast.LENGTH_SHORT).show()
+                                val intent = Intent(this, MainActivity::class.java)
+                                startActivity(intent)
+                            } else {
+                                Toast.makeText(this, it.exception.toString(), Toast.LENGTH_SHORT)
+                                    .show()
+                            }
                         }
-                    }
                 } else {
                     Toast.makeText(this, "Password is not matching", Toast.LENGTH_SHORT).show()
                 }
