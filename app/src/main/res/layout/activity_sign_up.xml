@@ -47,7 +47,7 @@
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:background="@drawable/edit_text_background"
-            android:drawableStart="@drawable/account"
+            android:drawableStart="@drawable/name"
             android:drawablePadding="10dp"
             android:hint="@string/RegName"
             android:inputType="textPersonName"

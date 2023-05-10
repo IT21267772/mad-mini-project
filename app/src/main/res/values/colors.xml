@@ -30,4 +30,6 @@
     <color name="DeleteColor">#ff1a1a</color>
     <color name="UpdateColor">#00b33c</color>
 
+    <color name="userDetails">#e6e6e6</color>
+
 </resources>
