@@ -206,7 +206,7 @@
                                     android:textSize="23sp" />
 
                                 <TextView
-                                    android:id="@+id/geEmail"
+                                    android:id="@+id/getEmail"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_weight="1"
@@ -225,16 +225,16 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_weight="1"
-                                    android:text="@string/Country"
+                                    android:text="@string/AccType"
                                     android:textColor="@color/black"
                                     android:textSize="23sp" />
 
                                 <TextView
-                                    android:id="@+id/geCountry"
+                                    android:id="@+id/getownership"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_weight="1"
-                                    android:text="@string/get_Country"
+                                    android:text="@string/get_type"
                                     android:textSize="23sp" />
                             </LinearLayout>
 

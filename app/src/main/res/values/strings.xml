@@ -81,7 +81,7 @@
     <string name="user_name">User Name</string>
     <string name="userEmail">Email</string>
     <string name="userPassword">Password</string>
-    <string name="Country">Country</string>
+    <string name="AccType">Ownership</string>
     <string name="mobile">Mobile</string>
     <string name="age">Age</string>
     <string name="DOB">Birthday</string>
@@ -89,7 +89,7 @@
     <string name="get_user_name">User Name</string>
     <string name="get_userEmail">Email</string>
     <string name="get_userPassword">Password</string>
-    <string name="get_Country">Country</string>
+    <string name="get_type">Ownership</string>
     <string name="get_mobile">Mobile</string>
     <string name="get_age">Age</string>
     <string name="get_DOB">Birthday</string>
