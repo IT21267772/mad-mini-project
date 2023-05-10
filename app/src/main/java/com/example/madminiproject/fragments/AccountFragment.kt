@@ -19,8 +19,6 @@ import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.database.ValueEventListener
 import com.squareup.picasso.Picasso
 import de.hdodenhof.circleimageview.CircleImageView
-import org.w3c.dom.Text
-import java.util.Objects
 
 class AccountFragment : Fragment() {
 
@@ -55,13 +53,16 @@ class AccountFragment : Fragment() {
                 val name = view.findViewById<TextView>(R.id.acc_name)
                 val profilePicture = view.findViewById<CircleImageView>(R.id.acc_profile_pic)
 
-                val imageUri = Uri.parse("https://icons.veryicon.com/png/o/miscellaneous/administration/account-25.png")
-
                 name.text = user?.name
 
-                Picasso.get()
-                    .load(imageUri)
-                    .into(profilePicture)
+                // Load and display profile image using Picasso or any other library
+                if (user != null) {
+                    if (user.image.isNotEmpty()) {
+                        Picasso.get().load(user.image).into(profilePicture)
+                    }
+                } else {
+                    profilePicture.setImageResource(R.drawable.acc_profile_pic)
+                }
             }
 
             override fun onCancelled(databaseError: DatabaseError) {
@@ -75,7 +76,8 @@ class AccountFragment : Fragment() {
         val accSetting1 = view.findViewById<LinearLayout>(R.id.acc_setting_label1)
 
         accSetting1.setOnClickListener {
-
+            val intent = Intent(requireContext(), ViewProfileActivity::class.java)
+            startActivity(intent)
         }
 
         //My Posts

@@ -15,7 +15,7 @@
         android:background="@drawable/navbar_round_corners"
         app:itemIconTint="@color/nav_icons_color"
         app:itemRippleColor="@color/secondary"
-        app:itemTextColor="@color/secondary"
+        app:itemTextColor="@color/nav_icons_color"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"

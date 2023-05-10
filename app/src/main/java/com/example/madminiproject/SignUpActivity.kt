@@ -41,7 +41,7 @@ class SignUpActivity : AppCompatActivity() {
             if (name .isNotEmpty() && email.isNotEmpty() && password.isNotEmpty() && confirmPassword.isNotEmpty() && type.isNotEmpty()) {
                 if (password == confirmPassword) {
 
-                    val user = User(name, email, type)
+                    val user = User(name, email, type, "", "", "")
 
                     firebaseAuth.createUserWithEmailAndPassword(email, password).addOnCompleteListener {
                         if (it.isSuccessful) {

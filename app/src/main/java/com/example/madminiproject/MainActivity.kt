@@ -40,7 +40,7 @@ class MainActivity : AppCompatActivity() {
             currentFragment = supportFragmentManager.getFragment(savedInstanceState, "CURRENT_FRAGMENT")
         } else {
             // Load the HomeFragment by default
-            currentFragment = HomeFragment()
+            currentFragment = PackagesFragment()
             supportFragmentManager.beginTransaction().replace(R.id.frame_layout, currentFragment!!).commit()
         }
 
@@ -48,12 +48,12 @@ class MainActivity : AppCompatActivity() {
         binding.bottomNavigationView.setOnItemSelectedListener { menuItem ->
             when (menuItem.itemId) {
                 // If the Home menu item is selected, load the HomeFragment
-                R.id.homeId -> {
-                    if (currentFragment !is HomeFragment) {
-                        currentFragment = HomeFragment()
-                        supportFragmentManager.beginTransaction().replace(R.id.frame_layout, currentFragment!!).commit()
-                    }
-                }
+//                R.id.homeId -> {
+//                    if (currentFragment !is HomeFragment) {
+//                        currentFragment = HomeFragment()
+//                        supportFragmentManager.beginTransaction().replace(R.id.frame_layout, currentFragment!!).commit()
+//                    }
+//                }
                 // If the Packages menu item is selected, load the PackagesFragment
                 R.id.packagesId -> {
                     if (currentFragment !is PackagesFragment) {

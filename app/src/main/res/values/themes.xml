@@ -42,4 +42,8 @@
         <item name="color">@color/white</item>
     </style>
 
+    <style name="HMLDatePickerStyle" parent="@android:style/Widget.Material.Light.DatePicker">
+        <item name="android:datePickerMode">spinner</item>
+    </style>
+
 </resources>
