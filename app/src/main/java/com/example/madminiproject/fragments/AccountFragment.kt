@@ -53,8 +53,8 @@ class AccountFragment : Fragment() {
         acc_setting_label1 = view.findViewById(R.id.acc_setting_label1)
         acc_setting_label1.setOnClickListener {
 
-            val intent = Intent(this@AccountFragment, ViewUserProfile::class.java)
-            startActivity(intent)
+            //val intent = Intent(this@AccountFragment, ViewUserProfile::class.java)
+            //startActivity(intent)
         }
 
         // Add a listener to the userRef that listens for changes to the user data

@@ -43,7 +43,6 @@ class MainActivity : AppCompatActivity() {
         val adapter = ParentAdapter(parentList)
         recyclerView.adapter = adapter
 
-
         // Inflate the activity's layout using View Binding
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
@@ -62,6 +61,7 @@ class MainActivity : AppCompatActivity() {
             supportFragmentManager.beginTransaction().replace(R.id.frame_layout, currentFragment!!)
                 .commit()
         }
+
 
         // Set a listener for when the user selects a bottom navigation menu item
         binding.bottomNavigationView.setOnItemSelectedListener { menuItem ->
@@ -132,9 +132,10 @@ class MainActivity : AppCompatActivity() {
             }
             true
         }
+
     }
 
-    fun addDataToList() {
+    private fun addDataToList() {
 
         val childItems1 = ArrayList<ChildItem>()
         childItems1.add(ChildItem("img1", R.drawable.drawable_cabana_kithulgala))
