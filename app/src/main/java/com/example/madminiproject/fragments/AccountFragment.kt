@@ -28,7 +28,7 @@ class AccountFragment : Fragment() {
     private val TAG = "AccountFragment"
     private lateinit var viewProfile: TextView
 
-    private lateinit var acc_setting_label1 : TextView
+    private lateinit var acc_setting_label1: TextView
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -48,10 +48,12 @@ class AccountFragment : Fragment() {
         val currentUser = firebaseAuth.currentUser
 
         // Get a reference to the current user's data in the Firebase Realtime Database
-        val userRef = FirebaseDatabase.getInstance().reference.child("users").child(currentUser?.uid!!)
-
+        val userRef =
+            FirebaseDatabase.getInstance().reference.child("users").child(currentUser?.uid!!)
+        acc_setting_label1 = view.findViewById(R.id.acc_setting_label1)
         acc_setting_label1.setOnClickListener {
-            val intent = Intent(this@AccountFragment, ViewUserProfile ::class.java)
+
+            val intent = Intent(this@AccountFragment, ViewUserProfile::class.java)
             startActivity(intent)
         }
 
@@ -64,7 +66,8 @@ class AccountFragment : Fragment() {
                 val name = view.findViewById<TextView>(R.id.acc_name)
                 val profilePicture = view.findViewById<CircleImageView>(R.id.acc_profile_pic)
 
-                val imageUri = Uri.parse("https://icons.veryicon.com/png/o/miscellaneous/administration/account-25.png")
+                val imageUri =
+                    Uri.parse("https://icons.veryicon.com/png/o/miscellaneous/administration/account-25.png")
 
                 name.text = user?.name
 
@@ -77,8 +80,6 @@ class AccountFragment : Fragment() {
                 // Handle errors here if the read operation is cancelled or fails
                 Log.e(TAG, "onCancelled", databaseError.toException())
             }
-
-
         })
 
 
