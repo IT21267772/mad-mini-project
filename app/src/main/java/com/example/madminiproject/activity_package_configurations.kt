@@ -8,10 +8,8 @@ import android.widget.Button
 import android.widget.ImageView
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.example.madminiproject.adapters.ExploreMyPostsAdapter
 import com.example.madminiproject.adapters.UserSpecificPackageAdapter
 import com.example.madminiproject.models.PackageModel
-import com.example.madminiproject.models.Post
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.*
 
@@ -33,6 +31,12 @@ class activity_package_configurations : AppCompatActivity() {
         // Initialize Firebase objects
         init()
 
+        val topBarBackButton = findViewById<ImageView>(R.id.pkgBackBtn)
+
+        //back navigation button function
+        topBarBackButton.setOnClickListener{
+            finish()
+        }
 
         val addPackNavigationBtn = findViewById<Button>(R.id.pack_config_add_btn)
 

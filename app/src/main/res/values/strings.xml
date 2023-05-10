@@ -147,6 +147,7 @@
     <string name="add_feedback_prompt">Share Your Experience</string>
     <string name="feedback_prompt2">Give Feedback</string>
     <string name="dummyFeedbackBtn">Feedback</string>
-<!--    <string name="sample_content_description">picture</string>-->
+    <string name="my_packages">My Packages</string>
+    <!--    <string name="sample_content_description">picture</string>-->
 
 </resources>

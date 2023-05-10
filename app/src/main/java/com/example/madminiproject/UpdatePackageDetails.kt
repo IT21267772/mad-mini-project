@@ -72,6 +72,13 @@ class UpdatePackageDetails : AppCompatActivity() {
         // Initialize Firebase authentication
         firebaseAuth = FirebaseAuth.getInstance()
 
+        val topBarBackButton = findViewById<ImageView>(R.id.backBtn)
+
+        //back navigation button function
+        topBarBackButton.setOnClickListener{
+            finish()
+        }
+
         val updatePackageButton = findViewById<TextView>(R.id.update_package_btn)
 
         updatePackageButton.setOnClickListener{

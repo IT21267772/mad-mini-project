@@ -31,6 +31,13 @@ class PackageDescription : AppCompatActivity() {
         val writer = intent.getStringExtra("author")
         val contact = intent.getStringExtra("hotelContact")
 
+        val topBarBackButton = findViewById<ImageView>(R.id.backBtn_to_packages)
+
+        //back navigation button function
+        topBarBackButton.setOnClickListener{
+            finish()
+        }
+
         // Use the Picasso library to load the image from the URL into the ImageView
         Picasso.get()
             .load(imgID)
