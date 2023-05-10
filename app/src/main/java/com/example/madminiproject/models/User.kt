@@ -1,10 +1,10 @@
 package com.example.madminiproject.models
 
 data class User(
-    var name: String = "",
-    var email: String = "",
-    var password: String = "",
-    var country : String = "",
-    var dob : String = "",
-    var phone : String = ""
+    var name: String? = null,
+    var email: String? = null,
+    var password: String? = null,
+    var country : String? = null,
+    var dob : String? = null,
+    var phone : String? = null
 )
