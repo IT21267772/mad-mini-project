@@ -44,14 +44,15 @@ class UpdatePackageDetails : AppCompatActivity() {
             pickImage.launch("image/*")
         }
 
-        // Get the post information from the previous activity
+        // Get the package information from the previous activity
         val packageID = intent.getStringExtra("packID")
         val packageImage = intent.getStringExtra("image")
         val hotelName = intent.getStringExtra("hotelName")
         val hotelLocation = intent.getStringExtra("hotelLocation")
-        val hotelPrice = intent.getDoubleExtra("hotelPrice",0.0)
+        val hotelPrice = intent.getDoubleExtra("hotelPrice", 0.0)
         val packDescription = intent.getStringExtra("packDescription")
         val packPhoneNo = intent.getStringExtra("contactNumber")
+        val packAuthor = intent.getStringArrayExtra("packAuthor")
 
         val edtHotelName = findViewById<EditText>(R.id.update_lodge_name)
         val edtHotelLocation = findViewById<EditText>(R.id.update_lodge_location)

@@ -27,10 +27,6 @@ class FeedbackAdapter (private var feedbackList : ArrayList<Feedback>): Recycler
         holder.rating.text = currentItem.rating.toString()
         holder.feedback.text = currentItem.feedback
 
-//        // OnItemClickListener for a particular pofeedback_author_feedbackst
-//        holder.itemView.setOnClickListener {
-//            onItemClick(currentItem)
-//        }
     }
 
     // Return the size of exploreList ArrayList
