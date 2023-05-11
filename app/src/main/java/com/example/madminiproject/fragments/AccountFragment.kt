@@ -52,9 +52,8 @@ class AccountFragment : Fragment() {
             FirebaseDatabase.getInstance().reference.child("users").child(currentUser?.uid!!)
         acc_setting_label1 = view.findViewById(R.id.acc_setting_label1)
         acc_setting_label1.setOnClickListener {
-
-            //val intent = Intent(this@AccountFragment, ViewUserProfile::class.java)
-            //startActivity(intent)
+            val intent = Intent(activity, ViewUserProfile::class.java)
+            startActivity(intent)
         }
 
         // Add a listener to the userRef that listens for changes to the user data
