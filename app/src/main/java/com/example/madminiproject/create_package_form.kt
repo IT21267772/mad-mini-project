@@ -43,6 +43,13 @@ class create_package_form : AppCompatActivity() {
         // Initialize Firebase authentication
         firebaseAuth = FirebaseAuth.getInstance()
 
+        val topBarBackButton = findViewById<ImageView>(R.id.addPkgbackBtn)
+
+        //back navigation button function
+        topBarBackButton.setOnClickListener{
+            finish()
+        }
+
         // Set a click listener for the image picker button
         val imgPickerBtn = findViewById<ImageView>(R.id.package_pic_upload)
         imgPickerBtn.setOnClickListener {

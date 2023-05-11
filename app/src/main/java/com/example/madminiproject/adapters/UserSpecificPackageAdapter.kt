@@ -61,7 +61,6 @@ class UserSpecificPackageAdapter(private val userPackages : ArrayList<PackageMod
 
         //handling the update request when button is clicked
         holder.updateBtn.setOnClickListener {
-            // If the user clicks the "Edit Post" option, start the ExploreUpdatePostActivity and pass the post properties as extras
             val intent = Intent(holder.itemView.context, UpdatePackageDetails::class.java)
             intent.putExtra("packID", currentItem.packID)
             intent.putExtra("hotelName", currentItem.hotelName)
@@ -70,6 +69,7 @@ class UserSpecificPackageAdapter(private val userPackages : ArrayList<PackageMod
             intent.putExtra("packDescription", currentItem.packDesc)
             intent.putExtra("image", currentItem.packImage)
             intent.putExtra("contactNumber", currentItem.contactNo)
+            intent.putExtra("packAuthor", currentItem.packAuthor)
             holder.itemView.context.startActivity(intent)
         }
 

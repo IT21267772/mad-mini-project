@@ -124,16 +124,16 @@
         android:src="@drawable/pack_svg"/>
 
     <ImageView
-        android:contentDescription="@string/sample_content_description"
+        android:id="@+id/addPkgbackBtn"
         android:layout_width="35dp"
         android:layout_height="35dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="17dp"
+        android:contentDescription="@string/sample_content_description"
+        android:src="@drawable/drawable_back"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="17dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginEnd="25dp"
-        app:tint="@color/background"
-        android:src="@drawable/drawable_back"/>
+        app:tint="@color/background" />
 
     <Button
         android:id="@+id/addPackageBtn"

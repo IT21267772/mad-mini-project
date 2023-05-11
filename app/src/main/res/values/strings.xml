@@ -122,6 +122,7 @@
     <string name="welcome_btn_val">Explore</string>
     <string name="pack_config_add_btn">Add New Package</string>
     <string name="package_contact_no">Contact Number</string>
+    <string name="my_packages">My Packages</string>
 
 
     <!-- Strings Related to Feedback Functionality -->

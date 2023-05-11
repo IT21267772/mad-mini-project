@@ -9,16 +9,17 @@
 
     <com.google.android.material.imageview.ShapeableImageView
         android:id="@+id/package_image_mod_card"
-        android:paddingStart="8dp"
-        android:adjustViewBounds="true"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:scaleType="centerCrop"
+        android:layout_marginStart="10dp"
         android:layout_marginTop="10dp"
+        android:adjustViewBounds="true"
+        android:paddingStart="8dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/drawable_cabana_village_side"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:shapeAppearanceOverlay="@style/RoundCorners"
-        android:src="@drawable/drawable_cabana_village_side"
         tools:ignore="MissingConstraints" />
 
     <!--lodge name-->
