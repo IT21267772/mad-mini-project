@@ -35,14 +35,6 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        recyclerView = findViewById(R.id.parentRecyclerView)
-        recyclerView.setHasFixedSize(true)
-        recyclerView.layoutManager = LinearLayoutManager(this)
-
-        addDataToList()
-        val adapter = ParentAdapter(parentList)
-        recyclerView.adapter = adapter
-
         // Inflate the activity's layout using View Binding
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
@@ -135,62 +127,6 @@ class MainActivity : AppCompatActivity() {
 
     }
 
-    private fun addDataToList() {
-
-        val childItems1 = ArrayList<ChildItem>()
-        childItems1.add(ChildItem("img1", R.drawable.drawable_cabana_kithulgala))
-        childItems1.add(ChildItem("img2", R.drawable.drawable_cabana_kithulgala))
-        childItems1.add(ChildItem("img3", R.drawable.drawable_cabana_kithulgala))
-        childItems1.add(ChildItem("img4", R.drawable.drawable_cabana_kithulgala))
-
-        parentList.add(ParentItem("img5", R.drawable.drawable_cabana_kithulgala, childItems1))
-
-        val childItem2 = ArrayList<ChildItem>()
-        childItem2.add(ChildItem("img6", R.drawable.drawable_cabana_kithulgala))
-        childItem2.add(ChildItem("img7", R.drawable.drawable_cabana_kithulgala))
-        childItem2.add(ChildItem("img8", R.drawable.drawable_cabana_kithulgala))
-        parentList.add(
-            ParentItem(
-                "Historical Sites",
-                R.drawable.drawable_cabana_kithulgala,
-                childItem2
-            )
-        )
-        val childItem3 = ArrayList<ChildItem>()
-        childItem3.add(ChildItem("img9", R.drawable.drawable_cabana_kithulgala))
-        childItem3.add(ChildItem("img10", R.drawable.drawable_cabana_kithulgala))
-        childItem3.add(ChildItem("img11", R.drawable.drawable_cabana_kithulgala))
-        parentList.add(
-            ParentItem(
-                "Coastal Area",
-                R.drawable.drawable_cabana_kithulgala,
-                childItem3
-            )
-        )
-        val childItem4 = ArrayList<ChildItem>()
-        childItem4.add(ChildItem("img12", R.drawable.drawable_cabana_kithulgala))
-        childItem4.add(ChildItem("img13", R.drawable.drawable_cabana_kithulgala))
-        childItem4.add(ChildItem("img14", R.drawable.drawable_cabana_kithulgala))
-        parentList.add(
-            ParentItem(
-                "Wild Life Safari",
-                R.drawable.sigiriya,
-                childItem4
-            )
-        )
-        val childItem5 = ArrayList<ChildItem>()
-        childItem5.add(ChildItem("img15", R.drawable.sigiriya))
-        childItem5.add(ChildItem("img16", R.drawable.sigiriya))
-        childItem5.add(ChildItem("img17", R.drawable.sigiriya))
-        childItem5.add(ChildItem("img18", R.drawable.sigiriya))
-        parentList.add(
-            ParentItem(
-                "Beach Side",
-                R.drawable.drawable_cabana_kithulgala,
-                childItem5
-            )
-        )
-    }
 
 
     override fun onSaveInstanceState(outState: Bundle) {
