@@ -214,17 +214,17 @@
         android:textColor="@color/black"
         android:textSize="17sp" />
 
-    <Button
-        android:layout_marginTop="20dp"
-        android:id="@+id/send_inquiry_button"
-        android:layout_width="140dp"
-        android:layout_gravity="center"
-        android:layout_height="wrap_content"
-        android:backgroundTint="@color/primary_color"
-        android:textSize="18sp"
-        android:textColor="@color/secondary"
-        android:text="@string/inquiry_send_btn_value"
-        />
+<!--    <Button-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:id="@+id/send_inquiry_button"-->
+<!--        android:layout_width="140dp"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:backgroundTint="@color/primary_color"-->
+<!--        android:textSize="18sp"-->
+<!--        android:textColor="@color/secondary"-->
+<!--        android:text="@string/inquiry_send_btn_value"-->
+<!--        />-->
 
 </LinearLayout>
 </ScrollView>

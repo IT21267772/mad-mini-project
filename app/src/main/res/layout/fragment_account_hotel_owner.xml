@@ -153,35 +153,35 @@
                             android:layout_gravity="center_vertical"/>
                     </LinearLayout>
 
-                    <LinearLayout
-                        android:id="@+id/acc_setting_label3"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:background="@drawable/acc_setting_label"
-                        android:layout_marginTop="@dimen/acc_setting_label_margin_top"
-                        android:layout_marginRight="@dimen/acc_setting_label_margin_right"
-                        android:layout_marginBottom="@dimen/acc_setting_label_margin_bottom"
-                        android:layout_marginLeft="@dimen/acc_setting_label_margin_left"
-                        android:padding="@dimen/acc_setting_label_padding">
+<!--                    <LinearLayout-->
+<!--                        android:id="@+id/acc_setting_label3"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:background="@drawable/acc_setting_label"-->
+<!--                        android:layout_marginTop="@dimen/acc_setting_label_margin_top"-->
+<!--                        android:layout_marginRight="@dimen/acc_setting_label_margin_right"-->
+<!--                        android:layout_marginBottom="@dimen/acc_setting_label_margin_bottom"-->
+<!--                        android:layout_marginLeft="@dimen/acc_setting_label_margin_left"-->
+<!--                        android:padding="@dimen/acc_setting_label_padding">-->
 
-                        <ImageView
-                            android:layout_width="@dimen/acc_setting_img_width"
-                            android:layout_height="@dimen/acc_setting_img_height"
-                            android:src="@drawable/inquiry"
-                            android:layout_gravity="center_vertical"
-                            android:layout_marginStart="@dimen/acc_setting_img_margin_start"
-                            app:tint="@color/acc_setting_label_icon" />
+<!--                        <ImageView-->
+<!--                            android:layout_width="@dimen/acc_setting_img_width"-->
+<!--                            android:layout_height="@dimen/acc_setting_img_height"-->
+<!--                            android:src="@drawable/inquiry"-->
+<!--                            android:layout_gravity="center_vertical"-->
+<!--                            android:layout_marginStart="@dimen/acc_setting_img_margin_start"-->
+<!--                            app:tint="@color/acc_setting_label_icon" />-->
 
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="@string/hotel_owner_acc_setting3"
-                            android:fontFamily="@font/poppins_medium"
-                            android:textColor="@color/acc_setting_label_txt"
-                            android:layout_marginStart="@dimen/acc_setting_txt_margin_start"
-                            android:textSize="@dimen/acc_setting_txt_size"
-                            android:layout_gravity="center_vertical"/>
-                    </LinearLayout>
+<!--                        <TextView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:text="@string/hotel_owner_acc_setting3"-->
+<!--                            android:fontFamily="@font/poppins_medium"-->
+<!--                            android:textColor="@color/acc_setting_label_txt"-->
+<!--                            android:layout_marginStart="@dimen/acc_setting_txt_margin_start"-->
+<!--                            android:textSize="@dimen/acc_setting_txt_size"-->
+<!--                            android:layout_gravity="center_vertical"/>-->
+<!--                    </LinearLayout>-->
 
                     <LinearLayout
                         android:id="@+id/acc_setting_label4"

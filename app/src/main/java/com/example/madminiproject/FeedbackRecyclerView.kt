@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.widget.ImageView
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.madminiproject.adapters.FeedbackAdapter
@@ -27,6 +28,13 @@ class FeedbackRecyclerView : AppCompatActivity() {
         giveFeedbackbtn.setOnClickListener{
             val intent = Intent(this, create_feedback_form::class.java)
             startActivity(intent)
+        }
+
+        val topBackButton = findViewById<ImageView>(R.id.backBtnFeedbackList)
+
+        //back navigation button function
+        topBackButton.setOnClickListener{
+            finish()
         }
 
         // Get a reference to RecyclerView and set its layout manager

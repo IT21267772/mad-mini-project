@@ -107,7 +107,7 @@ class ExploreFragment : Fragment() {
 
         // Set padding for the searchView close button
         searchView.findViewById<ImageView>(androidx.appcompat.R.id.search_close_btn)?.apply {
-            setPadding(0, 0, 275, 0)
+            setPadding(0, 0, 120, 0)
         }
 
         //Set the background of the searchView

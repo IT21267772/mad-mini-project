@@ -90,11 +90,11 @@ class AccountHotelOwnerFragment : Fragment() {
         }
 
         //Inquiries
-        val accSetting3 = view.findViewById<LinearLayout>(R.id.acc_setting_label3)
-
-        accSetting3.setOnClickListener {
-
-        }
+//        val accSetting3 = view.findViewById<LinearLayout>(R.id.acc_setting_label3)
+//
+//        accSetting3.setOnClickListener {
+//
+//        }
 
         //My Posts
         val accSetting4 = view.findViewById<LinearLayout>(R.id.acc_setting_label4)
