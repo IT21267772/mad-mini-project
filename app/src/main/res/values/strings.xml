@@ -154,4 +154,9 @@
     <string name="profile_country_hint">Country</string>
     <string name="profile_update_btn">UPDATE</string>
 
+    <string name="login">Login</string>
+    <string name="loginBtn">LOGIN</string>
+    <string name="login_email_hint">Email</string>
+    <string name="login_password_hint">Password</string>
+
 </resources>
