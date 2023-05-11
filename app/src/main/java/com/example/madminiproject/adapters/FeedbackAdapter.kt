@@ -18,7 +18,7 @@ class FeedbackAdapter (private var feedbackList : ArrayList<Feedback>): Recycler
         return FeedbackViewHolder(itemView)
     }
 
-    // Bind data to the views for a particular post
+    // Bind the data to the views for a particular feedback in the recycler view
     override fun onBindViewHolder(holder: FeedbackViewHolder, position: Int) {
         val currentItem = feedbackList[position]
         Picasso.get().load(currentItem.image).into(holder.imageView)
@@ -29,7 +29,7 @@ class FeedbackAdapter (private var feedbackList : ArrayList<Feedback>): Recycler
 
     }
 
-    // Return the size of exploreList ArrayList
+    // Return the size of feedbackList ArrayList
     override fun getItemCount(): Int {
         return feedbackList.size
     }

@@ -12,7 +12,7 @@
         android:layout_height="70dp"
         android:background="@color/primary_color"
         android:fontFamily="@font/poppins_medium"
-        android:paddingStart="25dp"
+        android:paddingStart="50dp"
         android:paddingTop="17dp"
         android:text="@string/FeedbackActionBar"
         android:textColor="@color/background"
@@ -20,6 +20,18 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/backBtnRView"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="17dp"
+        android:contentDescription="@string/sample_content_description"
+        android:src="@drawable/drawable_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="@color/background" />
 
     <ImageView
         android:contentDescription="feedback_icon2"
