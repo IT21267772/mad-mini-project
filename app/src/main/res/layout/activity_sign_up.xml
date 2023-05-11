@@ -12,7 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:text="Register"
+        android:text="@string/register"
         android:layout_marginTop="50dp"
         android:textSize="34sp" />
 
@@ -26,7 +26,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textPersonName"
-            android:hint="Name" />
+            android:hint="@string/register_name_hint" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -39,7 +39,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textEmailAddress"
-            android:hint="Email" />
+            android:hint="@string/register_email_hint" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -53,7 +53,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textPassword"
-            android:hint="Password" />
+            android:hint="@string/register_password_hint" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -67,7 +67,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textPassword"
-            android:hint="Confirm Password" />
+            android:hint="@string/register_confirm_password_hint" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <RadioGroup
@@ -82,13 +82,13 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginRight="40dp"
-            android:text="Hotel Owner"/>
+            android:text="@string/register_type_hotel_owner"/>
 
         <RadioButton
             android:id="@+id/radioT"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Traveler" />
+            android:text="@string/register_type_traveler" />
     </RadioGroup>
 
     <Button
@@ -97,6 +97,6 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
         android:layout_gravity="center"
-        android:text="Register" />
+        android:text="@string/registerBtn" />
 
 </LinearLayout>

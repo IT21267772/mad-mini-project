@@ -159,4 +159,13 @@
     <string name="login_email_hint">Email</string>
     <string name="login_password_hint">Password</string>
 
+    <string name="register">Register</string>
+    <string name="register_name_hint">Name</string>
+    <string name="register_email_hint">Email</string>
+    <string name="register_password_hint">Password</string>
+    <string name="register_confirm_password_hint">Confirm Password</string>
+    <string name="register_type_hotel_owner">Hotel Owner</string>
+    <string name="register_type_traveler">Traveler</string>
+    <string name="registerBtn">REGISTER</string>
+
 </resources>
